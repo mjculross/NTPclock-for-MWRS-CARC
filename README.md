@@ -271,3 +271,4 @@ Libraries:  The following libraries must be loaded (typically, by using the Ardu
                SparkFun u-blox GNSS Arduino Library:  by SparkFun Electronics, version 2.2.29
                Adafruit BME280 Library (install all): by Adafruit,             version 2.3.0
                Adafruit BMP280 Library (install all): by Adafruit,             version 3.0.0
+
