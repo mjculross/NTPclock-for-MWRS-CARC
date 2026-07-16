@@ -108,7 +108,7 @@ typedef enum
 
 #define DEFAULT_BRIGHTNESS           7                // Default brightness if prefs entry does not exist
 #define DEFAULT_NIGHTMODE        false                // Default nightMode if prefs entry does not exist
-#define DEFAULT_USEMETRIC         true                // Default useMetric if prefs entry does not exist
+#define DEFAULT_USEMETRIC        false                // Default useMetric if prefs entry does not exist
 
 /*
    The following items define the colors used to display the various things.
