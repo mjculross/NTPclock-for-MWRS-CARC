@@ -3,7 +3,7 @@
    Author:           (original) Bruce E. Hall, w8bh.net (Original Version)
                      (current) RAHinsley (VK2ARH), MJCulross (KD5RXT)
    Date:             (original) 13 Feb 2021
-                     (current) 12 Jul 2026
+                     (current) 15 Jul 2026
    Hardware:         ESP32-S2-mini with ILI9341 TFT display
    Software:         (see the README.TXT file for information on setup & required library versions)
    Legal:            Copyright (c) 2021 Bruce E. Hall.
