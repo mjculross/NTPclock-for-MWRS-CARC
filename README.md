@@ -266,9 +266,11 @@ Libraries:  The following libraries must be loaded (typically, by using the Ardu
                ArduinoJson:                           by Benoit Blanchon,      version 7.4.3
                Button2                                by Lennart Hennigs       version 2.7.0
                ESPAsyncWebServer:                     by ESP32Async,           version 3.11.1
-               Preferences:                           by Volodymyr Shymanskyy, version 2.2.2
+               AsyncTCP                               by ESP32Async            version 3.4.10
+               SparkFun u-blox GNSS Arduino Library:  by SparkFun Electronics, version 2.2.28
                TinyGPSPlus:                           by Mikal Hart,           version 1.0.3
-               SparkFun u-blox GNSS Arduino Library:  by SparkFun Electronics, version 2.2.29
+               EspSoftwareSerial                      by Dirk Kaar             version 8.1.0
+               Preferences:                           by Volodymyr Shymanskyy, version 2.2.2
                Adafruit BME280 Library (install all): by Adafruit,             version 2.3.0
                Adafruit BMP280 Library (install all): by Adafruit,             version 3.0.0
 
