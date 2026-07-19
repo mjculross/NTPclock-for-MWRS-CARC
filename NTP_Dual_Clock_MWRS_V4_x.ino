@@ -22,7 +22,7 @@
    Revision History: (see the README.txt file for detailed revision history)
 */
 
-#define VERSION_TIMESTAMP "20260718-0900"
+#define VERSION_TIMESTAMP "20260719-1730"
 
 //#define GPS_TRY_REVERSED_RXTX_FIRST                                            // uncomment/activate this to try the reversed GPS RX/TX pin definition first
 //#define DISABLE_BUTTON_DEF_TIMEOUT                                             // uncomment to disable the automatic timeout on the initial button definition screen
@@ -245,7 +245,7 @@ int          weatherGust            = 0;
 time_t       weatherUnixSunrise;
 time_t       weatherUnixSunset;
 
-String       weatherAppID           = DEFAULT_WEATHER_APP_ID;                  // MJC: b4149a7c3430d9b73efa0671f20b163d
+String       weatherAppID           = DEFAULT_WEATHER_APP_ID;
 String appID                = "&appid=" + weatherAppID;
 
 int32_t weatherDelayCount = 0;
@@ -750,25 +750,25 @@ void forceDefaults(boolean requireConfirm)
       // Start modifying network preferences
       prefs.begin("network", false);
 
-      prefs.putString("wifissid1", "RV_THERE_YET_2G");
-      prefs.putString("wifipass1", "817M919C8852");
+      prefs.putString("wifissid1", "");
+      prefs.putString("wifipass1", "");
 
-      prefs.putString("wifissid2", "RV_THERE_YET_SL");
-      prefs.putString("wifipass2", "817M919C8852");
+      prefs.putString("wifissid2", "");
+      prefs.putString("wifipass2", "");
 
-      prefs.putString("wifissid3", "817Culross551Home6015-2G");
-      prefs.putString("wifipass3", "1820HuntingGreenDrive");
+      prefs.putString("wifissid3", "");
+      prefs.putString("wifipass3", "");
 
-      prefs.putString("wifissid4", "k5cow");
-      prefs.putString("wifipass4", "147.28FMk5cow");
+      prefs.putString("wifissid4", "");
+      prefs.putString("wifipass4", "");
 
-      prefs.putString("wifissid5", "MJC_EVO");
-      prefs.putString("wifipass5", "817M919C8852");
+      prefs.putString("wifissid5", "");
+      prefs.putString("wifipass5", "");
 
-      prefs.putString("wifissid6", "MOTOE3C0");
-      prefs.putString("wifipass6", "acyvu46439");
+      prefs.putString("wifissid6", "");
+      prefs.putString("wifipass6", "");
 
-      prefs.putString("loginusername", "mjculross");
+      prefs.putString("loginusername", "");
       prefs.putString("loginpassword", "");
 
       prefs.putString("apName", apName);
@@ -4813,7 +4813,10 @@ void showDataItems()
 
             case SHOW_MODE_GPS_ONLY:
                {
-                  dataIndex = SHOW_FIRST_GPS_DATA;
+                  if ((dataIndex < SHOW_FIRST_GPS_DATA) || (dataIndex > SHOW_LAST_GPS_DATA))
+                  {
+                     dataIndex = SHOW_FIRST_GPS_DATA;
+                  }
                }
                break;
 
